@@ -14,7 +14,7 @@ function getAge(dateString: string) {
 
 export default function NbaCard() {
   return (
-    <div className="w-full flex flex-wrap lg:flex-nowrap place-items-center justify-center lg:justify-between gap-6 px-6">
+    <div className="w-full flex flex-wrap lg:flex-nowrap place-items-center justify-center lg:justify-between gap-6 px-6 h-[100%] overflow-auto scrollbar-thin scrollbar-track-gray-800/0 scrollbar-thumb-gray-900/0">
       <div className="w-1/4 relative ">
         <Image sizes="50vw" src={kcard} alt="abdenour bball tenu" width={500} className="rounded-3xl" />
       </div>
@@ -50,8 +50,8 @@ export default function NbaCard() {
               <span className="font-bold max-w-[75px] text-center">160 lbs (73 kg)</span>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="font-semibold text-gray-500">Team</span>
-              <span className="font-bold max-w-[75px] text-center"><a href="https://chenebbc.ch/" target="_blank">Chene BBC</a></span>
+              <span className="font-semibold text-gray-500">Nickname</span>
+              <span className="font-bold max-w-[75px] text-center">Abde Bens</span>
             </div>
             <div className="flex flex-col items-center gap-1">
               <span className="font-semibold text-gray-500">From</span>
@@ -62,8 +62,8 @@ export default function NbaCard() {
               <span className="font-bold max-w-[75px] text-center">{getAge("1999/02/18")}</span>
             </div>
             <div className="flex flex-col items-center gap-1">
-              <span className="font-semibold text-gray-500">Nickname</span>
-              <span className="font-bold max-w-[75px] text-center">Abde Bens</span>
+              <span className="font-semibold text-gray-500">Team</span>
+              <span className="font-bold max-w-[75px] text-center"><a href="https://chenebbc.ch/" target="_blank">Chene BBC</a></span>
             </div>
             <div className="flex flex-col items-center gap-1">
               <span className="font-semibold text-gray-500">Previous Team</span>
@@ -77,9 +77,9 @@ export default function NbaCard() {
               <span className="font-semibold text-gray-500">Award</span>
               <span className="font-bold max-w-[115px] text-center">National UNSS Champion <br /> Gorilles (FR) 2015/2016</span>
             </div>
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-center gap-1 sm:hidden">
             </div>
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-center gap-1 sm:hidden">
             </div>
 
             <div className="flex flex-col items-center gap-1">
