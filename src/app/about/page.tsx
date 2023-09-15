@@ -1,14 +1,22 @@
+'use client'
+
+import { state } from "../utils/state";
+import { useSnapshot } from "valtio";
+import traduction from "@/app/utils/traduction.json";
 import Image from "next/image";
 
 const About = () => {
+  const snap = useSnapshot(state);
+  const index = snap.lang === "en" ? 0 : 1;
+
   return (
-    <div className="relative isolate bg-gray-900  m-auto w-[70%] h-[70%] flex place-items-center rounded-3xl">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
+    <div className="relative isolate bg-gray-900 m-auto w-[full] flex place-items-center rounded-3xl">
+      <div className="mx-auto grid items-center max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
               <svg
-                className="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
               >
                 <defs>
@@ -41,18 +49,14 @@ const About = () => {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">Who am I ? </h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white">{traduction.about[index].title}</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              I m a 24 years old software engineer who has been studying in 42 for 5 years. I made a lot of website using technologies like React.js, Next.js, tailwind.css and much more. Also did some clone Websites to master my css skills. And recently discover the world of web3 and got my web3 developer certification with Alyra where i learned how to create smart contracts, and made my own NFT Marketplace.
-            </p>
-            {/* TODO write the text about it and bball */}
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              I m a 24 years old software engineer who has been studying in 42 for 5 years. I made a lot of website using technologies like React.js, Next.js, tailwind.css and much more. Also did some clone Websites to master my css skills. And recently discover the world of web3 and got my web3 developer certification with Alyra where i learned how to create smart contracts, and made my own NFT Marketplace.
+              {traduction.about[index]?.description}
             </p>
           </div>
         </div>
-        <div className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 rounded-3xl">
-          <Image className="rounded-3xl" alt="abdenour's picture" width={800} height={0} src={'https://media.licdn.com/dms/image/D4E03AQELTTH4D7OzKQ/profile-displayphoto-shrink_800_800/0/1664895247776?e=1700092800&v=beta&t=nZFR9mvsKuaKRQoxgilHv2Ac-ZXH2OKMoMcjPGqslzA'} />
+        <div className="relative px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 rounded-3xl flex place-content-center place-items-center">
+          <Image className="rounded-3xl w-[100%]" alt="abdenour's picture" sizes="100vw" width={100} height={100} src={'https://media.licdn.com/dms/image/D4E03AQELTTH4D7OzKQ/profile-displayphoto-shrink_800_800/0/1664895247776?e=1700092800&v=beta&t=nZFR9mvsKuaKRQoxgilHv2Ac-ZXH2OKMoMcjPGqslzA'} />
         </div>
       </div>
     </div>

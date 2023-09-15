@@ -1,7 +1,10 @@
 "use client"
 
-import { SubmitHandler ,useForm } from 'react-hook-form';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import { BuildingOffice2Icon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import { state } from "../utils/state";
+import { useSnapshot } from "valtio";
+import traduction from "@/app/utils/traduction.json";
 
 // TODO link form with mail sender
 type Inputs = {
@@ -13,8 +16,11 @@ type Inputs = {
 }
 
 type Props = {};
- 
+
 const Contact = (): Props => {
+  const snap = useSnapshot(state);
+  const index = snap.lang === "en" ? 0 : 1;
+
   const {
     register,
     handleSubmit
@@ -24,9 +30,8 @@ const Contact = (): Props => {
     console.log("hj", formData);
     window.location.href = `mailto:abdeourbensouna@gmail.com?subject=${formData.number}&body=Hi, my name is ${formData.firstName}, ${formData.lastName}. ${formData.message} (${formData.email})`;
   }
-
   return (
-    <div className="relative isolate bg-gray-900  m-auto w-[70%] h-[70%] flex place-items-center rounded-3xl">
+    <div className="relative isolate bg-gray-900  m-auto w-[80%] h-[70%] flex place-items-center rounded-3xl">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
@@ -65,9 +70,9 @@ const Contact = (): Props => {
                 />
               </div>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">Get in touch</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-white"> {traduction.contact[index].title}</h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              As an IT expert, I solve tech challenges and boost productivity. With a passion for basketball, I play and share my love for the game. Contact me for a comprehensive service that blends tech and sports.
+              {traduction.contact[index].description}
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-300">
               <div className="flex gap-x-4">
@@ -76,7 +81,7 @@ const Contact = (): Props => {
                   <BuildingOffice2Icon className="h-7 w-6 text-gray-400" aria-hidden="true" />
                 </dt>
                 <dd>
-                  France / Switzerland
+                  {traduction.contact[index].location}
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -86,7 +91,7 @@ const Contact = (): Props => {
                 </dt>
                 <dd>
                   <a className="hover:text-white" href="tel:+1 (555) 234-5678">
-                    (+33) 7 67 87 43 34
+                    {traduction.contact[index].tel}
                   </a>
                 </dd>
               </div>
@@ -97,25 +102,25 @@ const Contact = (): Props => {
                 </dt>
                 <dd>
                   <a className="hover:text-white" href="mailto:abdenourbensouna@gmail.com">
-                    abdenourbensouna@gmail.com
+                    {traduction.contact[index].mail}
                   </a>
                 </dd>
               </div>
             </dl>
           </div>
         </div>
-        <form 
-        onSubmit={handleSubmit(onSubmit)}
-        method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          method="POST" className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-white">
-                  First name
+                  {traduction.contact[index].firstName}
                 </label>
                 <div className="mt-2.5">
                   <input
-                  {...register('firstName')}
+                    {...register('firstName')}
                     type="text"
                     name="first-name"
                     id="first-name"
@@ -126,11 +131,11 @@ const Contact = (): Props => {
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-white">
-                  Last name
+                  {traduction.contact[index].lastName}
                 </label>
                 <div className="mt-2.5">
                   <input
-                  {...register('lastName')}
+                    {...register('lastName')}
                     type="text"
                     name="last-name"
                     id="last-name"
@@ -141,11 +146,11 @@ const Contact = (): Props => {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="email" className="block text-sm font-semibold leading-6 text-white">
-                  Email
+                  {traduction.contact[index].email}
                 </label>
                 <div className="mt-2.5">
                   <input
-                  {...register('email')}
+                    {...register('email')}
                     type="email"
                     name="email"
                     id="email"
@@ -156,11 +161,11 @@ const Contact = (): Props => {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-white">
-                  Phone number
+                  {traduction.contact[index].client_tel}
                 </label>
                 <div className="mt-2.5">
                   <input
-                  {...register('number')}
+                    {...register('number')}
                     type="tel"
                     name="phone-number"
                     id="phone-number"
@@ -171,7 +176,7 @@ const Contact = (): Props => {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
-                  Message
+                  {traduction.contact[index].message}
                 </label>
                 <div className="mt-2.5">
                   <textarea
@@ -190,7 +195,7 @@ const Contact = (): Props => {
                 type="submit"
                 className="rounded-md bg-accent px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
               >
-                Send message
+                {traduction.contact[index].cta}
               </button>
             </div>
           </div>

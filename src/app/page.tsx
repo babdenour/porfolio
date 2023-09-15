@@ -1,8 +1,9 @@
+import About from "./about/page";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="relative flex place-items-center z-[-1]">
-      </div>
+    <main className="flex flex-col place-items-center place-content-center p-24">
+        <About/>
     </main>
   )
 }

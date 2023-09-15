@@ -9,7 +9,7 @@ export interface Technology {
   image: Image,
 }
 
-export interface Project  {
+export interface Project {
   _id: string,
   title: string;
   _type: "project";

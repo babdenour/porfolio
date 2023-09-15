@@ -1,0 +1,64 @@
+{
+  "about": [
+    {
+      "title": "Who am I ?",
+      "description": "As a developer, my academic journey through institutions like Paris Descartes, 42, and IPSSI has been complemented by my proficiency in cutting-edge technologies. I have expertise in JavaScript, Vue.js, React, and Next.js on the front-end, and Node.js, Nest.js, and Python on the back-end. These skills empower me to create robust and high-performance web applications while staying abreast of the latest technological advancements. My goal is to provide development solutions that blend technical expertise and innovation, all while remaining at the forefront of technology to meet the needs of my clients.",
+      "bball": "With a decade of experience as a basketball player, including achievements such as winning the departmental championship at Le Mee, competing at the regional level in Melun, and participating in the French AS championship during high school, I bring a wealth of on-court expertise. Currently, I'm playing in the Swiss 1LN league with Chene Basket's Red Devils. Additionally, I serve as a regional referee, adding a multifaceted perspective to my passion for the game. My journey in basketball has not only honed my skills but also instilled in me a deep appreciation for teamwork, discipline, and the thrill of competition."
+    },
+    {
+      "title": "Qui suis-je ?",
+      "description": "En tant que développeur, mon parcours académique à Paris Descartes, 42, et l'IPSSI a été enrichi par ma maîtrise des technologies les plus avancées. Je suis compétent en JavaScript, Vue.js, React, Next.js en front-end, et en Node.js, Nest.js, et Python en back-end. Ces compétences me permettent de créer des applications web robustes et performantes, tout en tirant parti des dernières avancées technologiques. Mon objectif est de fournir des solutions de développement qui allient expertise technique et innovation, tout en restant à la pointe de la technologie pour répondre aux besoins de mes clients.",
+      "bball": "Avec une décennie d'expérience en tant que joueur de basketball, dont des réalisations telles que la victoire au championnat départemental au Mée, la compétition au niveau régional à Melun, et la participation au championnat AS français pendant le lycée, je dispose d'une grande expertise sur le terrain. Actuellement, je joue dans la ligue suisse 1LN avec les Red Devils de Chene Basket. De plus, j'officie en tant qu'arbitre régional, ajoutant une perspective polyvalente à ma passion pour le jeu. Mon parcours dans le basketball a non seulement affiné mes compétences, mais m'a aussi inculqué une profonde appréciation pour le travail d'équipe, la discipline et le frisson de la compétition."
+    }
+  ],
+  "bball": [
+    {
+      "titile": "",
+      "subtitle": "",
+      "description": ""
+    },
+    {
+      "titile": "",
+      "subtitle": "",
+      "description": ""
+    }
+  ],
+  "contact": [
+    {
+      "title": "Get in touch !",
+      "description": "As an IT expert, I solve tech challenges and boost productivity. With a passion for basketball, I play and share my love for the game. Contact me for a comprehensive service that blends tech and sports.",
+      "location": "France / Switzerland",
+      "tel": "(+33) 7 67 87 43 34",
+      "mail": "abdenourbensouna@gmail.com",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "client_tel": "Phone Number",
+      "message": "Message",
+      "cta": "Send"
+    },
+    {
+      "title": "Contactez moi !",
+      "description": "En tant qu'expert en informatique, je résous les défis techniques et améliore la productivité. Passionné de basketball, je joue et partage mon amour pour le jeu. Contactez-moi pour un service complet alliant technologie et sports.",
+      "location": "France / Suisse",
+      "tel": "(+33) 7 67 87 43 34",
+      "mail": "abdenourbensouna@gmail.com",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "client_tel": "Numéro de télèphone",
+      "message": "Message",
+      "cta": "Envoyer"
+    }
+  ],
+  "work": [
+    {
+      "title": "",
+      "description": ""
+    },
+    {
+      "title": "",
+      "description": ""
+    }
+  ]
+}

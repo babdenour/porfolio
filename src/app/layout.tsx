@@ -1,7 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import {Nav} from '@/app/components/Nav'
+import { Nav } from '@/app/components/Nav'
+import { Langue } from '@/app/components/Langue'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Nav/>
-      <body className={`page text-white ${inter.className} relative flex place-items-center`}>{children}</body>
+      <body className={`page text-white ${inter.className} relative flex place-items-center`}>
+        <Nav />
+        <Langue />
+        {children}
+      </body>
     </html>
   )
 }
