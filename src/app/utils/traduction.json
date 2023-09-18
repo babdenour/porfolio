@@ -52,12 +52,172 @@
     }
   ],
   "work": [
+    [
+      {
+        "name": "OPEN NET SARL",
+        "features": [
+          {
+            "name": "Dev Full-Stack Vue.Js/Python/odoo. Lausanne",
+            "description": "Implementation of a data management interface for a CO2 equivalence application. Using the technologies Piccolo ORM, Vue.js, PostgreSQL. Modification of processes and documents in the ERP Odoo through Python ORM Odoo, PostgreSQL, XML, CSS.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "THEOREME",
+        "features": [
+          {
+            "name": "Dev front-End Vue.Js. Paris",
+            "description": "Understanding the client's needs and aligning them with their target audience. Developing and deploying a minimalist-looking showcase website.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "TIMESLAPPS",
+        "features": [
+          {
+            "name": "Dev Full-Stack React.Js(NextJs)/Nest.JS. Paris",
+            "description": "Development of a landing page while adhering to a set of specifications, along with the replication of the mobile application Timelapps (with added features like sending notifications and personalized emails). Creation of a back office using 'retool' (low code + SQL API queries). Addition of backend features to the Justeez project: auto-generation of invoices, timer, mailing, search system with filters, and permissions.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "LES EXTRAS",
+        "features": [
+          {
+            "name": "Dev Full-Stack React.Js/Nest.JS. Melun",
+            "description": "Coding a fast AI-based alert and optimal profile assignment system. Developing a front-end that allows users to create an account, enter all user information, and recover passwords, with security verification via email (Firebase). Additionally, implementing a calendar to retrieve availability or mission requests at all times. Creating a back office to manage all mission generations, placements, and contract creation.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "BONAPARKS",
+        "features": [
+          {
+            "name": "Dev Full-Stack web3 React.Js/Rust/Node.JS. Miami",
+            "description": "Project management for the sale and deployment of 10,000 NFTs on the Elrond blockchain. Hosting of data on IPFS, utilization of the Elrond API, and creation of a Node.js script to manage the successful deployment of NFTs. Deployment of the responsive React website for purchasing with wallet connection via the Maiar app.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "NONA",
+        "features": [
+          {
+            "name": "Dev Front-End Vue.Js. Paris",
+            "description": "Setting up pages for the central cafeteria management, as well as having access to the configurations of its satellites.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "OCTAVE",
+        "features": [
+          {
+            "name": "Dev Full-Stack Svelte.Js/Nest.JS. Paris",
+            "description": "Setting up and deploying the AWS web app for the seasonal employment platform, Workingoo. Creating user management APIs, as well as data retrieval and user data creation. Ensuring security through data submission validation pipes. Implementing an internal Svelte UI/kit and providing front-end and back-end support for Apparelo.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "name": "OPEN NET SARL",
+        "features": [
+          {
+            "name": "Dev Full-Stack Vue.Js/Python/odoo. Lausanne",
+            "description": "Mise en place d'une interface de gestion des données d'une application d'équivalence CO2. Via les technologies utilisées, Piccolo ORM, Vue.Js, PostgreSQL Modification des processus et document dans l'ERP Odoo via Python ORM Odoo, PostgreSQL, XML, CSS",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Ptoto du site "
+          }
+        ]
+      },
+      {
+        "name": "THEOREME",
+        "features": [
+          {
+            "name": "Dev front-End Vue.Js. Paris",
+            "description": "Comprendre le besoin client et l'orienté sur son besoin et ca cible. Développement et déploiement d'un site vitrine avec un aspect minimaliste.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "TIMESLAPPS",
+        "features": [
+          {
+            "name": "Dev Full-Stack React.Js(NextJs)/Nest.JS. Paris",
+            "description": "Développement de landing page en respectant un cahier des charges, additionné à une reproduction de l'application mobile Timelapps (ajout de features comme envoi de notifications, de mail personnalisé), création de back office via 'retool'(low code + requêtes SQL API). Ajout de features back au projet Justeez : auto-generation de facture, chrono, mailing, système de recherche via filtre et permissions.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "LES EXTRAS",
+        "features": [
+          {
+            "name": "Dev Full-Stack React.Js/Nest.JS. Melun",
+            "description": "Coder un system d'alert et d'assignation de profile optimal apidement via une IA. Coder un front qui permet de créer un compte et entrer toutes les informations utilisateur et récupération de mdp, avec une vérification de sécurité via mail (firebase) ainsi qu'un agenda afin de récupérer les disponibilités ou les demande de missions à toutes heures. Back office pour gérer toutes les generations de missions ansi que placement et création de contract.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "BONAPARKS",
+        "features": [
+          {
+            "name": "Dev Full-Stack web3 React.Js/Rust/Node.JS. Miami",
+            "description": "Gestion de projet de vente et déploiement de 10K d'NFT sur la blockchain Elrond. hébergement de la data en IPFS, utilisation de l'api d'elrond ansi que création d'un script NodeJs afin de gérer le bon déploiement des NFTs. Déploiement du site responsive en React pour l'achat avec connection au wallet via l'app Maiar.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "NONA",
+        "features": [
+          {
+            "name": "Dev Front-End Vue.Js. Paris",
+            "description": "Mise en place de page pour la gestions de cantine central ansi que d'avoir accès aux paramétrages de ses satellites",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      },
+      {
+        "name": "OCTAVE",
+        "features": [
+          {
+            "name": "Dev Full-Stack Svelte.Js/Nest.JS. Paris",
+            "description": "Mise en place et éploiement AWS de la web app d'emploi saisonnier Workingoo. Création d'api de gestion d'utilisateurs ainsi que de  écupération et de création de données utilisateurs. Sécurisation via pipe de validation d'envoi de la donnée. Mise en place d'un ui/kit interne Svelte et intervention front et back chez Apparelo.",
+            "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-feature-06-detail-01.jpg",
+            "imageAlt": "Screen shot of "
+          }
+        ]
+      }
+    ]
+  ],
+  "workcard": [
     {
-      "title": "",
-      "description": ""
+      "title": "Working journey",
+      "description": "The Organize modular system offers endless options for arranging your favorite and most used items. Keep everything at reach and in its place, while dressing up your workspace."
     },
     {
-      "title": "",
+      "title": "Parcours professionnel",
       "description": ""
     }
   ]

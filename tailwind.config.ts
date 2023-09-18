@@ -41,8 +41,9 @@ const config: Config = {
     }
   },
   plugins: [
-    require('tailwind-scrollbar'), 
+    require('tailwind-scrollbar'),
     require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 }
 export default config

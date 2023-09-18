@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`page text-white ${inter.className} relative flex place-items-center h-screen overflow-auto`}>
+      <body className={`page text-white ${inter.className} relative flex place-items-center justify-center h-screen`}>
         <Nav />
         <Langue />
         {children}

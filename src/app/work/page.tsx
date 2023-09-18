@@ -1,5 +1,5 @@
 'use client'
-import Card from '@/app/components/Card';
+import WorkCards from '@/app/components/WorkCards';
 import { Project } from '../utils/interfaces';
 
 
@@ -45,11 +45,11 @@ const Work = () => {
     }
   ]
 
-// TODOmock data
+  // TODOmock data
 
   return (
-    <div className="relative isolate  m-auto w-[70%] h-[70%] flex place-items-center rounded-3xl z-10">
-      <Card projects={projects} />
+    <div className="relative isolate m-auto w-[70%] h-[70%] flex place-items-center rounded-3xl z-10">
+      <WorkCards />
     </div>
   );
 };
